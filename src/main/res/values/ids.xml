@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="head" type="id"></item>
+    <item name="tail" type="id"></item>
+    <item name="imageplaybaricon" type="id"></item>
+    <item name="back" type="id"></item>
+    <item name="play_info_bar" type="id"></item>
+    <item name="album_big" type="id"></item>
+    <item name="seekbar_field" type="id"></item>
+    <item name="music_icon" type="id"></item>
+    <item name="musicInfo" type="id"></item>
+    <item name="importsong" type="id"></item>
+    <item name="play_pause_btn" type="id"></item>
+    <item name="musiclist" type="id"></item>
+</resources>

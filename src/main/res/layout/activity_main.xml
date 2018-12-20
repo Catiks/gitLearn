@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/mainui"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ubuntu.happyeliminating.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="Enjoy Yourself"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+        <ImageButton
+            android:id="@+id/importsong"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/import_btn"
+            android:contentDescription="TODO" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/musiclist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:layout_above="@+id/tail"/>
+
+    <RelativeLayout
+        android:id="@+id/tail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:alpha="0.85"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="top">
+
+        <ImageView
+            android:id="@+id/imageplaybaricon"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/song_icon" />
+
+        <TextView
+            android:id="@+id/musicInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageplaybaricon"
+            android:padding="5dp"
+            android:text="@string/no_music_playing"
+            android:textSize="25dp" />
+
+        <ImageButton
+            android:id="@+id/play_pause_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/pause"
+            android:gravity="top"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+</RelativeLayout>
